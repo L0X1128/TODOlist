@@ -1,12 +1,16 @@
-const onClickAdd = () =>{
-    const inputTitle = document.getElementById("addTodo").Value;
-    const inoutText = document.getElementById("addText").value;
-    document.getElementById("addTodo").value ="";
-    document.getElementById("addText").value ="";
-};
+const tasks = [];
 
-document
-    .getElementById("add-task")
-    .addEventListener("click", () => onClickAdd());
+const taskValue = document.getElementesById('add-task');
 
-const div = document.createElement("div");
+taskValue.addEventListener('submit', (event) => {
+
+    event.preventDefault();
+
+    const nameValue = document.getElementesById('add-task-value').value;
+
+    if(!nameValue) return;
+
+    const task = {id: tasks.length+1, name:nameValue};
+
+    console.log("登録しました")
+})
