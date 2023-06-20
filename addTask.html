@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang = "ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>AddTask</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main>
+            <h1>タスクを追加する</h1>
+            <div id="input">
+                <label>TODO: <input id="addTodo" placeholder="やることを入力"></label><br>
+                <label>期日: <input type="date"></label><br>
+                <label>詳細: <input type="text" id="addText" placeholder="詳細を入力"></label><br>
+                <button id="add-task">登録</button>
+                <button id="backMain" onclick="location.href='mainPage.html'">タスク一覧へ戻る</button>
+            </div>
+        </main>
+    </body>
+</html>
