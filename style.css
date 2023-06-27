@@ -5,13 +5,31 @@
 
 body{
     background-color: white;
+    font-family: "Century Gothic", "Helvetica", "Lucida Console";
 }
 
 #TaskList{
-    border: 2px solid black;
+    text-decoration: underline;
+    background-color: #ccffcc;
     text-align: left;
 }
 
-#input{
-    padding: 0px;
+#title{
+    margin: 5px;
+}
+
+#addTaskTitle{
+    margin: 10px;
+    margin-top: 0px;
+    width: 250px;
+    height: 60px;
+}
+
+#add-task{
+    width: 256px;
+    margin: 10px;
+}
+
+#RealTimeClock{
+    font-size: 30px;
 }
